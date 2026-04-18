@@ -1,5 +1,8 @@
 # Black Hole Stability and Temperature
 
+## What is a hairy black hole? (The stability and hairy knob idea)
+
+The core idea: A hairy black hole is a black hole surrounded by nontrivial fields (scalar, vector, etc.) that add extra "hair" parameters beyond just mass M and spin J. Unlike the no-hair theorem's prediction of bald Kerr black holes, these extra fields create tunable knobs like scalar charge α that control stability properties. You can dial α up or down while keeping the black hole's mass M and Hawking temperature T_H roughly fixed, changing only the stability landscape. This lets you engineer configurations where spontaneous emission or instability occurs purely through hair adjustment, not by changing the core black hole thermodynamics.
 This note gives a compact thermodynamic picture of black holes and shows how stability can depend on more than just mass and Hawking temperature once additional physical degrees of freedom are included.
 
 ## Core relations
