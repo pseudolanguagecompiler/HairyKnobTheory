@@ -1,71 +1,79 @@
 # Black Hole Stability and Temperature
 
-This note gives a simple way to think about black hole stability as a function of the size of a Blackhole and why this is related to the mass, temperature and total energy in the blackhole, so cannot be easily decreased without putting more energy into the system. 
+This note gives a compact thermodynamic picture of Schwarzschild black holes and shows why larger black holes are colder, evaporate more slowly, and are harder to destabilize by Hawking radiation.
 
-## Core equations
+## Core relations
 
 For a non-rotating black hole:
 
-\[
 E = Mc^2
-\]
 
-\[
-T_H = \frac{\hbar c^3}{8\pi G M k_B}
-\]
+T_H = (ħ c^3) / (8π G M k_B)
 
-\[
-\frac{dM}{dt} \propto -\frac{1}{M^2}
-\]
+dM/dt ∝ -1/M^2
 
-These show that as mass \(M\) increases, Hawking temperature \(T_H\) decreases, and evaporation slows down.
+These relations imply that as mass M increases, the Hawking temperature T_H decreases, and the evaporation rate becomes smaller.
 
-## Simple stability idea
+## Thermodynamic interpretation
 
-A very simple stability proxy is:
+A useful entropy relation is the Bekenstein–Hawking entropy:
 
-\[
-S \propto \frac{1}{T_H}
-\]
+S_BH = (k_B c^3 A) / (4Għ)
 
-Since \(T_H \propto 1/M\), this is also:
+For a Schwarzschild black hole, A = 4π r_s^2 with
 
-\[
-S \propto M
-\]
+r_s = 2GM / c^2,
 
-So, in this simplified picture, larger black holes are more stable against evaporation.
+so
 
-## Fixed-temperature case
+S_BH = (4π k_B G M^2) / (ħ c)
 
-For a Schwarzschild black hole, temperature and mass are linked:
-
-\[
-T_H \propto \frac{1}{M}
-\]
-
-So if temperature is held fixed, mass is fixed too. That means you cannot change the intrinsic stability of an isolated Schwarzschild black hole without changing the setup.
+Thus larger black holes have larger entropy and lower temperature.
 
 ## Heat capacity
 
-Black holes can have negative heat capacity:
+The heat capacity is
 
-\[
-C = \frac{dE}{dT}
-\]
+C = dE/dT
 
-For a Schwarzschild black hole, this is negative, which means the black hole gets hotter as it loses energy. That is one reason black hole thermodynamics behaves differently from ordinary systems.
+For a Schwarzschild black hole, this is negative:
+
+C = -(8π k_B G M^2) / (ħ c)
+
+This means that when the black hole loses energy, it gets hotter, which is opposite to ordinary matter.
+
+## Evaporation scaling
+
+Because
+
+T_H ∝ 1/M,
+
+the power emitted by Hawking radiation decreases strongly with mass, and the lifetime scales approximately as
+
+τ ∝ M^3
+
+So a more massive black hole is not only colder, but also evaporates much more slowly.
+
+## Stability idea
+
+If stability is defined in a simple thermodynamic sense as resistance to evaporation, then a useful intuition is:
+
+larger M → lower T_H → slower evaporation
+
+However, this is only a simplified thermodynamic statement, not a full general-relativistic proof of dynamical stability.
+
+## Fixed-temperature case
+
+For a Schwarzschild black hole, temperature and mass are tied together:
+
+T_H ∝ 1/M
+
+So if the temperature is fixed, the mass is fixed too. In that restricted setting, there is no independent way to vary the black hole’s intrinsic thermodynamic state without changing the system itself.
 
 ## One-line summary
 
-A simple model is:
+A compact toy model is:
 
-\[
-S = \frac{1}{T_H} = \frac{8\pi G M k_B}{\hbar c^3}
-\]
+S ∝ 1/T_H ∝ M
 
-In this toy model, lower temperature means higher stability.
-
-## Note
-
-This is a simplified thermodynamic picture, not a full general-relativistic stability proof.
+This captures the idea that lower temperature corresponds to slower evaporation and therefore greater resistance to Hawking loss.
